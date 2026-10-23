@@ -1,0 +1,211 @@
+
+/* ===== PENGATURAN DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf3;
+    color: #3e2723;
+    line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #5d3325;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #f5d7b5;
+    font-size: 16px;
+}
+
+/* ===== NAVIGASI ===== */
+nav {
+    background-color: #8b5e3c;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f1d5b5;
+    color: #5d3325;
+}
+
+/* ===== KONTEN UTAMA ===== */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #7b442b;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #8b5e3c;
+    margin: 20px 0 10px;
+}
+
+/* ===== HALAMAN BERANDA ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero img {
+    width: 45%;
+    max-height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+/* ===== DAFTAR KEUNGGULAN ===== */
+.tentang ul {
+    padding-left: 25px;
+}
+
+.tentang li {
+    margin-bottom: 8px;
+}
+
+/* ===== TOMBOL ===== */
+.tombol {
+    display: inline-block;
+    background-color: #a9683f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.tombol:hover {
+    background-color: #5d3325;
+}
+
+/* ===== HALAMAN PRODUK ===== */
+.produk {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+}
+
+th {
+    background-color: #6d4030;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #e4d5c8;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff1e2;
+}
+
+tbody tr:hover {
+    background-color: #f5dfc9;
+}
+
+.catatan {
+    font-size: 14px;
+    font-style: italic;
+    color: #755e51;
+    margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #5d3325;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ===== TAMPILAN HP ===== */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero img {
+        width: 100%;
+        max-height: 280px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
